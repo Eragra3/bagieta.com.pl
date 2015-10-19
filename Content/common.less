@@ -1,0 +1,123 @@
+@import "variables";
+
+.text-center {
+  text-align: center;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.panel {
+  padding: 15px;
+  border: 1px solid @gray;
+  border-radius: 5px;
+  background-color: darken(white, 5%);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.table {
+  & > thead {
+    th {
+      font-size: 24px;
+      padding: 0 1em 0 1em;
+    }
+  }
+  & > tbody:nth-child(even) {
+    background-color: darken(white, 10%);
+  }
+  & > tbody:nth-child(odd) {
+    background-color: darken(white, 20%);
+  }
+  td {
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    &.has-table {
+      text-align: center;
+    }
+  }
+  &.bordered {
+    border: 1px solid @gray;
+  }
+  &.dark {
+    border: 1px solid darken(@dark, 10%);
+    background-color: @dark;
+    & > thead {
+      background-color: darken(@gray, 30%);
+      color: @main-dark-color;
+    }
+    & > tbody {
+      background-color: @dark;
+      color: @main-color;
+    }
+    td, th {
+      border: 0;
+    }
+  }
+}
+
+ol.list-baguette {
+  padding-left: 5em;
+  list-style-type: upper-roman;
+  & > li {
+    font-size: @font-size-default + 4px;
+  }
+}
+
+ul.list-baguette {
+  padding-left: 3em;
+  list-style-image: url("../Images/baguette-bullet.png");
+  & > li {
+    font-size: @font-size-default + 4px;
+  }
+}
+
+.btn-group {
+  position: absolute;
+  top: 23px;
+  right: 30px;
+  display: inline-block;
+  font-size: 0;
+  height: 100%;
+  .btn {
+    display: inline;
+    border: 1px solid black;
+    font-style: normal;
+    background-color: @dark;
+    padding: 1em;
+    cursor: pointer;
+    font-size: @font-size-default * 1.2;
+    color: @main-color;
+    text-decoration: none;
+    height: 100%;
+    &:hover {
+      background-color: @main-color;
+      color: @dark;
+    }
+
+    &.left {
+      border-radius: 5px 0 0 5px;
+    }
+    &.middle {
+      margin-left: -3px;
+      border-radius: 0;
+    }
+    &.right {
+      margin-left: -3px;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
