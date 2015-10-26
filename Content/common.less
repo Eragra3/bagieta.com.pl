@@ -11,6 +11,16 @@
     background-color: @main-color;
     color: @dark;
   }
+  &:focus {
+    background-color: darken(@main-color, 10%);
+    color: @dark;
+  }
+}
+
+mark {
+  padding: 0 0.2em;
+  background-color: transparent;
+  box-shadow: inset 0 0 5px 5px @main-color;
 }
 
 .text-center {
@@ -143,14 +153,9 @@ ul.list-baguette {
   font-size: 0;
   height: 100%;
   .btn {
-    .btn-dark();
     display: inline;
     font-style: normal;
     text-decoration: none;
-    &:hover {
-      background-color: @main-color;
-      color: @dark;
-    }
 
     &.left {
       border-radius: 5px 0 0 5px;
@@ -164,10 +169,21 @@ ul.list-baguette {
       border-radius: 0 5px 5px 0;
     }
   }
+  &.btn-group-dark {
+    .btn {
+      .btn-dark();
+    }
+  }
 }
 
 .form {
   font-size: 24px;
+
+  & > .form-heading {
+    font-size: 2em;
+    padding: 0 10px 20px 10px;
+    text-align: center;
+  }
 }
 
 .form-group {
@@ -190,11 +206,20 @@ ul.list-baguette {
     text-align: right;
     margin: 0;
   }
-  & > input[type="text"], select {
+  & > input[type="text"], input[type="email"], input[list], input[type="tel"], input[type="months"],
+  input[type="color"], input[type="url"], select {
     .form-element();
     min-width: 65%;
     max-width: 65%;
   }
+  input[type="range"] {
+    .form-element();
+    margin: 0;
+    min-width: 65%;
+    max-width: 65%;
+    vertical-align: middle;
+  }
+
   & > input[type="radio"] {
     margin-left: 35%;
     &:first-of-type {
@@ -209,6 +234,11 @@ ul.list-baguette {
     width: 100%;
     height: 10em;
   }
+}
+
+input.search-bar {
+  height: 3em;
+  width: 20vw;
 }
 
 .btn-submit {

@@ -1,15 +1,38 @@
 @import url(variables.less);
+
 @nav-height: 50px;
 @nav-padding-top: 10px;
 @nav-padding-bottom: 10px;
+@footer-height: 40px;
 
-body {
+html, body {
   font-size: 14px;
   font-family: "Calibri";
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .content {
-  margin: @nav-height + @nav-padding-top + @nav-padding-bottom + 15px 80px 0 80px;
+  height: 100%;
+  margin: 35px 80px 0 80px;
+}
+
+footer {
+  text-align: right;
+  background-color: @header-background-color;
+  padding: 20px 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+section#header {
+  height: @nav-height;
+}
+section#footer {
+  height: @footer-height;
 }
 
 h1 {
@@ -27,7 +50,7 @@ h1 {
   left: 0;
   right: 0;
   height: @nav-height;
-  background-color: lighten(orange, 20%);
+  background-color: @header-background-color;
   padding: @nav-padding-top 20px @nav-padding-bottom 20px;
   border-bottom: 1px solid orange;
 
@@ -71,6 +94,7 @@ h1 {
     }
   }
 }
+
 #stealthy-baguette {
   position: relative;
   left: 45vw;

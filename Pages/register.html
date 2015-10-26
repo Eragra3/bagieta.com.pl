@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <meta name="author" content="Bagieta">
+    <meta name="description" content="Register">
+    <meta name="keywords"
+          content="bagieta,bagiety,baguette,bread,chleb,pieczywo,baking,register,zarejestruj się, rejestracja">
+    <link type="text/css" href="../Content/style.css" rel="stylesheet"/>
+</head>
+<body>
+<section id="header">
+    <nav class="nav-bar">
+        <a class="nav-title" href="index.html">Bagieta</a>
+
+        <div class="btn-group btn-group-dark">
+            <a href="add.html" class="btn left">Dodaj</a>
+            <a href="browse.html" class="btn middle">Przeglądaj</a>
+            <a href="register.html" class="btn middle">Zarejestruj się</a>
+            <a href="account.html" class="btn middle">Moje konto</a>
+            <a href="hydepark.html" class="btn right">Hydepark</a>
+        </div>
+    </nav>
+</section>
+<section id="body" class="content">
+    <form class="size-8 form panel" method="post">
+        <div class="form-heading">Zarejestruj się</div>
+        <div class="form-group">
+            <label for="name">Imię</label>
+            <input id="name" name="name" type="text" placeholder="imię" autofocus>
+        </div>
+        <div class="form-group">
+            <label for="nazwisko">Nazwisko</label>
+            <input id="nazwisko" name="nazwisko" type="text" placeholder="nazwisko" required>
+        </div>
+        <div class="form-group">
+            <label for="monthOfBirth">Miesiąc urodzenia</label>
+            <input list="months" id="monthOfBirth" name="monthOfBirth" placeholder="miesiąc"/>
+            <datalist id="months">
+                <option value="Styczeń">
+                <option value="Luty">
+                <option value="Marzec">
+                <option value="Kwiecień">
+                <option value="Maj">
+                <option value="Czerwiec">
+                <option value="Lipiec">
+                <option value="Sierpień">
+                <option value="Wrzesień">
+                <option value="Październik">
+                <option value="Listopad">
+                <option value="Grudzień">
+            </datalist>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input id="phone" name="phone" type="tel" pattern="\d{9}" placeholder="numer telefonu">
+        </div>
+        <div class="align-right">
+            <button class="btn-reset" type="reset">Wyczyść formularz</button>
+            <button class="btn-submit" type="submit">Dodaj</button>
+        </div>
+    </form>
+</section>
+<section id="footer">
+    <footer>
+        Created by BagietaTeam
+    </footer>
+</section>
+</body>
+</html>

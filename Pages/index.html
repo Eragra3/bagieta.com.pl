@@ -9,16 +9,22 @@
     <link type="text/css" href="../Content/style.css" rel="stylesheet"/>
 </head>
 <body>
+<section id="header">
 <nav class="nav-bar">
     <a class="nav-title" href="index.html">Bagieta</a>
 
-    <div class="btn-group">
+    <div class="btn-group btn-group-dark">
         <a href="add.html" class="btn left">Dodaj</a>
         <a href="browse.html" class="btn middle">Przeglądaj</a>
+        <a href="register.html" class="btn middle">Zarejestruj się</a>
+        <a href="account.html" class="btn middle">Moje konto</a>
         <a href="hydepark.html" class="btn right">Hydepark</a>
     </div>
 </nav>
-<div class="content">
+
+</section>
+
+<section id="body" class="content">
     <img class="pull-right" src="../Images/soon.png" height="200" alt="SOON"/>
 
     <h1>Witamy na portalu Bagieta.pl<br/>
@@ -43,14 +49,16 @@
                 <ul class="list-baguette">
                     <li>chleb pszenny</li>
                     <li>chleb żytni</li>
-                    <li>chleb z borówkami (taki dobry)</li>
-                    <li>bułka tarta</li>
+                    <li>chleb z <mark>borówkami</mark> (taki dobry)</li>
+                    <li>bułka <mark>tarta</mark></li>
                     <li>łi li le baguette</li>
                     <li>grahamka</li>
                 </ul>
             </li>
             <li>Lecimy tutaj</li>
+            <li><meter value="2" min="0" max="10">Pasek wspaniałości strony</meter> </li>
         </ol>
+
 
         <h1 id="did-nothing">O takie pieczywo nic nie robiłeś!</h1>
         <blockquote>
@@ -58,6 +66,15 @@
             <abbr title="Znany i przeceniony ornitolog">Zembowicza</abbr>.
         </blockquote>
         <h2 class="text-center uppercase">Dołącz juz dziś!</h2>
+
+        <aside class="text-center uppercase">
+            <h4>Wyślij nam jakieś fanty!</h4>
+            <details>
+                <summary>Ulica 2/10</summary>
+                <p>Spółka Bagieta Z.O.O</p>
+                <p>Wrocław 50-666</p>
+            </details>
+        </aside>
     </section>
 
     <div id="stealthy-baguette">
@@ -71,6 +88,11 @@
               style="outline:none;" target="_self"/>
     </map>
 
-</div>
+</section>
+<section id="footer">
+    <footer>
+        Created by BagietaTeam
+    </footer>
+</section>
 </body>
 </html>
