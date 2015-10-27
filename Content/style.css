@@ -1,0 +1,367 @@
+@keyframes rotateAnim {
+  to {
+    transform: rotate(360deg);
+  }
+}
+html,
+body {
+  font-size: 14px;
+  font-family: "Calibri";
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.content {
+  height: 100%;
+  margin: 35px 80px 0 80px;
+}
+footer {
+  text-align: right;
+  background-color: #ffc966;
+  padding: 20px 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+section#header {
+  height: 50px;
+}
+section#footer {
+  height: 40px;
+}
+h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+h1 small {
+  padding-left: 3em;
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #ffc966;
+  padding: 10px 20px 10px 20px;
+  border-bottom: 1px solid orange;
+  z-index: 2000;
+}
+.nav-title {
+  font-size: 34px;
+  font-family: Helvetica;
+}
+.join-us {
+  width: 70%;
+}
+.join-us p {
+  font-size: 20px;
+}
+.join-us h1 {
+  font-size: 68px;
+}
+.join-us h2 {
+  font-size: 56px;
+}
+.join-us blockquote {
+  font-size: 36px;
+  font-family: "Calibri";
+  border-left: 2em solid #ababab;
+  padding: 0.3em 0 0 1em;
+  line-height: 1.2em;
+}
+.join-us blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  vertical-align: -0.4em;
+}
+.join-us blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  vertical-align: -0.6em;
+}
+#stealthy-baguette {
+  position: relative;
+  left: 45vw;
+  bottom: 5vw;
+  display: inline;
+}
+a.nav-title {
+  text-decoration: none;
+  color: brown;
+  font-family: sans-serif;
+  font-size: 3em;
+}
+.btn-dark {
+  border: 1px solid black;
+  background-color: #333333;
+  padding: 1em;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffa500;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.btn-dark:hover {
+  background-color: #ffa500;
+  color: #333333;
+}
+.btn-dark:active {
+  background-color: #cc8400;
+  color: #333333;
+}
+.btn-light {
+  border: 1px solid black;
+  background-color: white;
+  padding: 1em;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ff8c00;
+  border-radius: 5px;
+}
+.btn-light:hover {
+  background-color: #e6e6e6;
+  color: #ff8c00;
+}
+.btn-light:active {
+  background-color: #cccccc;
+  color: #ff8c00;
+}
+mark {
+  padding: 0 0.2em;
+  background-color: transparent;
+  box-shadow: inset 0 0 5px 5px #ffa500;
+}
+.text-center {
+  text-align: center;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.align-right {
+  text-align: right;
+}
+.align-left {
+  text-align: left;
+}
+.size-5 {
+  width: 25%;
+}
+.size-8 {
+  width: 40%;
+}
+.size-14 {
+  width: 70%;
+}
+.panel {
+  padding: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.table > thead th {
+  font-size: 24px;
+  padding: 0 1em 0 1em;
+}
+.table.striped tbody > tr:nth-child(even) {
+  background-color: white;
+}
+.table.striped tbody > tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.table td {
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.table td.has-table {
+  text-align: center;
+}
+.table.bordered {
+  border: 1px solid #cccccc;
+}
+.table.dark {
+  border: 1px solid #1a1a1a;
+  background-color: #333333;
+}
+.table.dark > thead {
+  background-color: #808080;
+  color: #ff8c00;
+}
+.table.dark > tbody {
+  background-color: #333333;
+  color: #ffa500;
+}
+.table.dark > tbody td {
+  background-color: #333333;
+}
+.table.dark td,
+.table.dark th {
+  border: 0;
+}
+.table.light {
+  background-color: #cccccc;
+}
+.table.light > thead {
+  background-color: #cccccc;
+  color: #ff8c00;
+}
+.table.light > tbody {
+  background-color: #e6e6e6;
+  color: #ff8c00;
+}
+.table.light td,
+.table.light th {
+  border: 0;
+}
+ol.list-baguette {
+  padding-left: 5em;
+  list-style-type: upper-roman;
+}
+ol.list-baguette > li {
+  font-size: 20px;
+}
+ul.list-baguette {
+  padding-left: 3em;
+  list-style-image: url("../Images/baguette-bullet.png");
+}
+ul.list-baguette > li {
+  font-size: 20px;
+}
+.btn-group {
+  position: absolute;
+  top: 23px;
+  right: 30px;
+  display: inline-block;
+  font-size: 0;
+  height: 100%;
+}
+.btn-group .btn {
+  display: inline;
+  font-style: normal;
+  text-decoration: none;
+}
+.btn-group .btn.left {
+  border-radius: 5px 0 0 5px;
+}
+.btn-group .btn.middle {
+  margin-left: -3px;
+  border-radius: 0;
+}
+.btn-group .btn.right {
+  margin-left: -3px;
+  border-radius: 0 5px 5px 0;
+}
+.btn-group.btn-group-dark .btn {
+  border: 1px solid black;
+  background-color: #333333;
+  padding: 1em;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffa500;
+}
+.btn-group.btn-group-dark .btn:hover {
+  background-color: #ffa500;
+  color: #333333;
+}
+.btn-group.btn-group-dark .btn:active {
+  background-color: #cc8400;
+  color: #333333;
+}
+.form {
+  font-size: 24px;
+}
+.form > .form-heading {
+  font-size: 2em;
+  padding: 0 10px 20px 10px;
+  text-align: center;
+}
+.form-group {
+  padding: 10px;
+}
+.form-group > label:after {
+  content: " : ";
+}
+.form-group > label {
+  display: inline-block;
+  font-size: 20px;
+  height: 36px;
+  padding: 3px;
+  min-width: 30%;
+  max-width: 30%;
+  text-align: right;
+  margin: 0;
+}
+.form-group > input[type="text"],
+.form-group input[type="email"],
+.form-group input[list],
+.form-group input[type="tel"],
+.form-group input[type="months"],
+.form-group input[type="color"],
+.form-group input[type="url"],
+.form-group select {
+  display: inline-block;
+  font-size: 20px;
+  height: 36px;
+  padding: 3px;
+  min-width: 65%;
+  max-width: 65%;
+}
+.form-group input[type="range"] {
+  display: inline-block;
+  font-size: 20px;
+  height: 36px;
+  padding: 3px;
+  margin: 0;
+  min-width: 65%;
+  max-width: 65%;
+  vertical-align: middle;
+}
+.form-group > input[type="radio"] {
+  margin-left: 35%;
+}
+.form-group > input[type="radio"]:first-of-type {
+  margin-left: 2%;
+}
+.form-group .radio-buttons {
+  display: inline-block;
+  font-size: 20px;
+  height: 36px;
+  padding: 3px;
+  height: auto;
+}
+.form-group > textarea {
+  width: 100%;
+  height: 10em;
+}
+input.search-bar {
+  height: 3em;
+  width: 20vw;
+}
+.btn-reset {
+  font-size: 12.8px;
+}
+input:invalid {
+  outline: 1px solid red;
+}
+.red {
+  color: red;
+  font-style: italic;
+  font-weight: bolder;
+}
+.weird {
+  text-decoration: line-through;
+  color: blue;
+  animation: rotateAnim 2s linear infinite;
+}

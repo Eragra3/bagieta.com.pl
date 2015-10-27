@@ -1,19 +1,44 @@
 @import "variables";
 
-.btn-dark() {
+.makeBtnDark() {
   border: 1px solid black;
   background-color: @dark;
   padding: 1em;
   cursor: pointer;
-  font-size: @font-size-default * 1.2;
+  font-size: @font-size-default;
   color: @main-color;
   &:hover {
     background-color: @main-color;
     color: @dark;
   }
-  &:focus {
+  &:active {
     background-color: darken(@main-color, 10%);
     color: @dark;
+  }
+}
+
+.btn-dark {
+  .makeBtnDark();
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.btn-light {
+  border: 1px solid black;
+  background-color: white;
+  padding: 1em;
+  cursor: pointer;
+  font-size: @font-size-default;
+  color: @main-dark-color;
+  border-radius: 5px;
+  &:hover {
+    background-color: darken(white, 10%);
+    color: @main-dark-color;
+  }
+  &:active {
+    background-color: darken(white, 20%);
+    color: @main-dark-color;
   }
 }
 
@@ -171,7 +196,7 @@ ul.list-baguette {
   }
   &.btn-group-dark {
     .btn {
-      .btn-dark();
+      .makeBtnDark();
     }
   }
 }
@@ -242,10 +267,12 @@ input.search-bar {
 }
 
 .btn-submit {
-  .btn-dark();
 }
 
 .btn-reset {
-  .btn-dark();
-  font-size: 16px;
+  font-size: @font-size-default * 0.8;
+}
+
+input:invalid {
+  outline: 1px solid red;
 }
