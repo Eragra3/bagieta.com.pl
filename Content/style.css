@@ -51,6 +51,7 @@ h1 small {
 .nav-title {
   font-size: 34px;
   font-family: Helvetica;
+  font-variant: small-caps;
 }
 .join-us {
   width: 70%;
@@ -318,6 +319,16 @@ ul.list-baguette > li {
   min-width: 65%;
   max-width: 65%;
 }
+.form-group > input[type="text"]:required,
+.form-group input[type="email"]:required,
+.form-group input[list]:required,
+.form-group input[type="tel"]:required,
+.form-group input[type="months"]:required,
+.form-group input[type="color"]:required,
+.form-group input[type="url"]:required,
+.form-group select:required {
+  outline: 1px solid blue;
+}
 .form-group input[type="range"] {
   display: inline-block;
   font-size: 20px;
@@ -355,6 +366,41 @@ input.search-bar {
 input:invalid {
   outline: 1px solid red;
 }
+@media print {
+  * {
+    color: black;
+  }
+  nav {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  img {
+    display: none;
+  }
+  .btn,
+  button,
+  .btn-dark,
+  .btn-submit,
+  .btn-reset,
+  .btn-light {
+    background-color: black;
+    color: white;
+  }
+  section.join-us {
+    width: 100%;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+}
 .red {
   color: red;
   font-style: italic;
@@ -364,4 +410,45 @@ input:invalid {
   text-decoration: line-through;
   color: blue;
   animation: rotateAnim 2s linear infinite;
+}
+body.spooky {
+  background-image: url(../Images/wallp.jpeg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+.content {
+  background-color: white;
+}
+.gradient {
+  background: linear-gradient(45deg, #9999ff, #ff9999) !important;
+}
+nav.dropdown {
+  position: fixed;
+  left: 150px;
+  top: 0;
+  z-index: 100000000000;
+}
+nav.dropdown a,
+nav.dropdown p {
+  padding: 3px;
+  margin: 0;
+  font-size: 32px;
+}
+nav.dropdown ul {
+  list-style-type: none;
+}
+nav.dropdown ul ul {
+  margin-bottom: -1px;
+  margin-right: -1px;
+}
+nav.dropdown ul li {
+  display: table-cell;
+  border: 1px solid gray;
+  background-color: white;
+}
+nav.dropdown ul li > ul {
+  display: none;
+}
+nav.dropdown ul li:hover > ul {
+  display: list-item;
 }

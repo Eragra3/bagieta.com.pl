@@ -1,4 +1,5 @@
 @import "animations.less";
+
 .red {
   color: red;
   font-style: italic;
@@ -11,7 +12,51 @@
   animation: rotateAnim 2s linear infinite;
 }
 
+body.spooky {
+  background-image: url(../Images/wallp.jpeg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.content {
+  background-color: white;
+}
+
+.gradient {
+  background: linear-gradient(45deg, lighten(blue, 30%), lighten(red, 30%)) !important;
+}
+
 //* {
 //  animation: rotateAnim 2s linear;
 //}
-
+nav.dropdown {
+  position: fixed;
+  left: 150px;
+  top: 0;
+  z-index: 100000000000;
+  a, p {
+    padding: 3px;
+    margin: 0;
+    font-size: 32px;
+  }
+  ul {
+    list-style-type: none;
+    ul {
+      margin-bottom: -1px;
+      margin-right: -1px;
+    }
+    li {
+      display: table-cell;
+      border: 1px solid gray;
+      background-color: white;
+      & > ul {
+        display: none;
+      }
+      &:hover {
+        & > ul {
+          display: list-item;
+        }
+      }
+    }
+  }
+}

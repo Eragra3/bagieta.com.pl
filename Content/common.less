@@ -236,6 +236,9 @@ ul.list-baguette {
     .form-element();
     min-width: 65%;
     max-width: 65%;
+    &:required {
+      outline: 1px solid blue;
+    }
   }
   input[type="range"] {
     .form-element();
@@ -275,4 +278,35 @@ input.search-bar {
 
 input:invalid {
   outline: 1px solid red;
+}
+@media print {
+  * {
+    color: black;
+  }
+  nav {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+
+  img {
+    display: none;
+  }
+  .btn, button, .btn-dark, .btn-submit, .btn-reset, .btn-light{
+    background-color: black;
+    color: white;
+  }
+  section.join-us {
+    width: 100%;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 28px;
+  }
 }
