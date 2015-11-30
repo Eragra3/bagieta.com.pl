@@ -161,6 +161,16 @@ mark {
 .size-14 {
   width: 70%;
 }
+.size-1,
+.size-2,
+.size-3,
+.size-4,
+.size-5,
+.size-8,
+.size-14 {
+  float: left;
+  margin: 0 15px;
+}
 .panel {
   padding: 15px;
   border: 1px solid #cccccc;
@@ -311,7 +321,8 @@ ul.list-baguette > li {
 .form-group input[type="months"],
 .form-group input[type="color"],
 .form-group input[type="url"],
-.form-group select {
+.form-group select,
+.form-group input[type="password"] {
   display: inline-block;
   font-size: 20px;
   height: 36px;
@@ -326,7 +337,8 @@ ul.list-baguette > li {
 .form-group input[type="months"]:required,
 .form-group input[type="color"]:required,
 .form-group input[type="url"]:required,
-.form-group select:required {
+.form-group select:required,
+.form-group input[type="password"]:required {
   outline: 1px solid blue;
 }
 .form-group input[type="range"] {
@@ -400,6 +412,9 @@ input:invalid {
   h3 {
     font-size: 28px;
   }
+}
+.form-error {
+  color: red;
 }
 .red {
   color: red;

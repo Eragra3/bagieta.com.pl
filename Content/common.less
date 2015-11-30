@@ -81,6 +81,11 @@ mark {
   width: @size-step * 14;
 }
 
+.size-1, .size-2, .size-3, .size-4, .size-5, .size-8, .size-14 {
+  float: left;
+  margin: 0 15px;
+}
+
 .panel {
   padding: 15px;
   border: 1px solid @gray;
@@ -232,7 +237,7 @@ ul.list-baguette {
     margin: 0;
   }
   & > input[type="text"], input[type="email"], input[list], input[type="tel"], input[type="months"],
-  input[type="color"], input[type="url"], select {
+  input[type="color"], input[type="url"], select, input[type="password"] {
     .form-element();
     min-width: 65%;
     max-width: 65%;
@@ -279,13 +284,16 @@ input.search-bar {
 input:invalid {
   outline: 1px solid red;
 }
+
 @media print {
   * {
     color: black;
   }
+
   nav {
     display: none;
   }
+
   footer {
     display: none;
   }
@@ -293,20 +301,29 @@ input:invalid {
   img {
     display: none;
   }
-  .btn, button, .btn-dark, .btn-submit, .btn-reset, .btn-light{
+
+  .btn, button, .btn-dark, .btn-submit, .btn-reset, .btn-light {
     background-color: black;
     color: white;
   }
+
   section.join-us {
     width: 100%;
   }
+
   h1 {
     font-size: 46px;
   }
+
   h2 {
     font-size: 36px;
   }
+
   h3 {
     font-size: 28px;
   }
+}
+
+.form-error {
+  color: red;
 }

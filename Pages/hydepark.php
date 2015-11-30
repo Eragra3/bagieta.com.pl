@@ -6,19 +6,9 @@
     <link type="text/css" href="../Content/style.css" rel="stylesheet"/>
 </head>
 <body class="spooky">
-<section id="header">
-    <nav class="nav-bar">
-        <a class="nav-title" href="index.html">Bagieta</a>
 
-        <div class="btn-group btn-group-dark">
-            <a href="add.html" class="btn left">Dodaj</a>
-            <a href="browse.html" class="btn middle">Przeglądaj</a>
-            <a href="register.html" class="btn middle">Zarejestruj się</a>
-            <a href="account.html" class="btn middle">Moje konto</a>
-            <a href="hydepark.html" class="btn right">Hydepark</a>
-        </div>
-    </nav>
-</section>
+<?php include ('header.php'); ?>
+
 <section class="content">
     <table class="table bordered striped">
         <thead>
@@ -183,10 +173,6 @@
        download="Jakiś plik dooma">Jakiś plik dooma</a>
     <a href="mailto:bider.daniel@gmail.com">Napisz do mnie!</a>
 </section>
-<section id="footer">
-    <footer>
-        Created by BagietaTeam
-    </footer>
-</section>
+<?php include ('footer.php'); ?>
 </body>
 </html>

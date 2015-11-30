@@ -10,29 +10,27 @@
     <link type="text/css" href="../Content/style.css" rel="stylesheet"/>
 </head>
 <body>
-<section id="header">
-    <nav class="nav-bar">
-        <a class="nav-title" href="index.html">Bagieta</a>
 
-        <div class="btn-group btn-group-dark">
-            <a href="add.html" class="btn left">Dodaj</a>
-            <a href="browse.html" class="btn middle">Przeglądaj</a>
-            <a href="register.html" class="btn middle">Zarejestruj się</a>
-            <a href="account.html" class="btn middle">Moje konto</a>
-            <a href="hydepark.html" class="btn right">Hydepark</a>
-        </div>
-    </nav>
-</section>
+<?php include('header.php'); ?>
+
 <section id="body" class="content">
-    <form class="size-8 form panel" method="post">
+    <form class="size-8 form panel" method="post" action="account.php">
         <div class="form-heading">Zarejestruj się</div>
         <div class="form-group">
-            <label for="name">Imię</label>
-            <input id="name" name="name" type="text" placeholder="imię" autofocus>
+            <label for="firstName">Imię</label>
+            <input id="firstName" name="firstName" type="text" placeholder="imię" autofocus>
         </div>
         <div class="form-group">
-            <label for="nazwisko">Nazwisko</label>
-            <input id="nazwisko" name="nazwisko" type="text" placeholder="nazwisko" required>
+            <label for="secondName">Nazwisko</label>
+            <input id="secondName" name="secondName" type="text" placeholder="nazwisko" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Hasło</label>
+            <input id="password" name="password" type="password" placeholder="hasło" required>
+        </div>
+        <div class="form-group">
+            <label for="password2">Powtórz hasło</label>
+            <input id="password2" name="password2" type="password" placeholder="powtórz hasło" required>
         </div>
         <div class="form-group">
             <label for="monthOfBirth">Miesiąc urodzenia</label>
@@ -61,16 +59,18 @@
             <label for="phone">Telefon</label>
             <input id="phone" name="phone" type="tel" pattern="\d{9}" placeholder="numer telefonu">
         </div>
+        <div class="form-group">
+            <label for="favNumber">Moje ulubiene</label>
+            <input id="favNumber" name="favNumber" type="text" placeholder="ulubiony numer">
+        </div>
         <div class="align-right">
             <button class="btn-reset" type="reset">Wyczyść formularz</button>
             <button class="btn-submit" type="submit">Dodaj</button>
         </div>
     </form>
 </section>
-<section id="footer">
-    <footer>
-        Created by BagietaTeam
-    </footer>
-</section>
+
+<?php include('footer.php'); ?>
+
 </body>
 </html>
